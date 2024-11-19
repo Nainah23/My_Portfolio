@@ -27,12 +27,16 @@ export default function Contact() {
         body: formBody,
       });
 
-      if (!response.ok) {
-        throw new Error('Something went wrong. Please try again later.');
+      if (response.ok) {
+        alert('Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        const errorData = await response.json();
+        console.error('Formspree Error:', errorData);
+        alert(
+          `There was an error sending your message: ${errorData.error || 'Unknown error'}`
+        );
       }
-
-      alert('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error(error);
       alert('There was an error sending your message. Please try again.');
@@ -40,7 +44,7 @@ export default function Contact() {
       setIsSubmitting(false);
     }
   };
-
+  
   return (
     <section id="contact" className="section">
       <div className="container">
