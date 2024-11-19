@@ -10,10 +10,6 @@ import Footer from '@/components/Footer'
 export default function Home() {
   return (
     <main>
-      <div className="text-red-500 text-2xl">
-        Test TailwindCSS
-      </div>
-
       <Navbar />
       <Hero />
       <About />
