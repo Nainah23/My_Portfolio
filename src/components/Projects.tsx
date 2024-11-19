@@ -10,7 +10,7 @@ const projects = [
     image: '/Church.jpg',
     tags: ['React', 'Node.js', 'MongoDB', 'AI APIs', 'MPESA'],
     links: {
-      github: 'https://github.com/Nainah23',
+      github: 'https://github.com/Nainah23/KIHINGO',
     },
     inProgress: true,
   },
@@ -20,7 +20,7 @@ const projects = [
     image: '/Payscrow.webp',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'MPESA API'],
     links: {
-      github: 'https://github.com/Nainah23',
+      github: 'https://github.com/Nainah23/Payscrow---NodeJs',
     },
   },
   {
@@ -29,7 +29,7 @@ const projects = [
     image: '/Event.png',
     tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe'],
     links: {
-      github: 'https://github.com/Nainah23',
+      github: 'https://github.com/malhaouit/Online_Event_Finder',
     },
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     image: '/image.png',
     tags: ['Python', 'Django', 'MySQL', 'HTML/CSS', 'JavaScript'],
     links: {
-      github: 'https://github.com/Nainah23',
+      github: 'https://github.com/Nainah23/Airbnb_clone_v2',
     },
   },
 ]
@@ -87,7 +87,7 @@ export default function Projects() {
                           <Github size={20} />
                         </a>
                       )}
-                      {project.links.live && (
+                      {/* {project.links.live && (
                         <a
                           href={project.links.live}
                           target="_blank"
@@ -96,7 +96,7 @@ export default function Projects() {
                         >
                           <ExternalLink size={20} />
                         </a>
-                      )}
+                      )} */}
                     </div>
                   </div>
 

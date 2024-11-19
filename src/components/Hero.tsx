@@ -72,28 +72,25 @@ export default function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="hidden lg:block"
-          >
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/10 rounded-full filter blur-3xl"></div>
-              <div className="relative bg-gradient-to-br from-primary to-secondary p-1 rounded-full">
-                <div className="bg-white dark:bg-dark rounded-full p-8">
-                  <svg className="w-full h-auto" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Placeholder for profile illustration or custom SVG */}
-                    <rect width="96" height="96" rx="48" fill="currentColor" fillOpacity="0.1" />
-                    <path
-                      d="M48 96C74.5097 96 96 74.5097 96 48C96 21.4903 74.5097 0 48 0C21.4903 0 0 21.4903 0 48C0 74.5097 21.4903 96 48 96Z"
-                      fill="currentColor"
-                      fillOpacity="0.1"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="hidden lg:block"
+            >
+              <div className="relative">
+                <div className="absolute inset-0 bg-primary/10 rounded-full filter blur-3xl"></div>
+                <div className="relative bg-gradient-to-br from-primary to-secondary p-1 rounded-full">
+                  <div className="bg-white dark:bg-dark rounded-full p-8">
+                    <img
+                      src="/Profile.jpg"
+                      alt="Ian Wainaina Kamau"
+                      className="w-full h-full rounded-full object-cover"
                     />
-                  </svg>
+                  </div>
                 </div>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+
         </div>
       </div>
     </section>
