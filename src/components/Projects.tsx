@@ -65,13 +65,13 @@ export default function Projects() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden"
               >
-                <div className="aspect-w-16 aspect-h-9">
+                {/* <div className="aspect-w-16 aspect-h-9">
                   <img
                     src="/api/placeholder/800/450"
                     alt={project.title}
                     className="w-full h-48 object-cover object-center group-hover:scale-105 transition-transform duration-300"
                   />
-                </div>
+                </div> */}
 
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
